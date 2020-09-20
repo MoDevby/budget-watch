@@ -256,6 +256,7 @@ public class TransactionViewActivity extends AppCompatActivity
         if(_budgetSpinner.getCount() == 0)
         {
             ArrayAdapter<String> budgets = new ArrayAdapter<>(this, R.layout.spinner_textview, budgetNames);
+            budgets.setDropDownViewResource(R.layout.spinner_dropdown);
             _budgetSpinner.setAdapter(budgets);
         }
 
