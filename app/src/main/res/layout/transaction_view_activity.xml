@@ -44,11 +44,6 @@
                     android:background="@color/DarkBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <View
-                        android:gravity="start"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -79,11 +74,6 @@
                             android:textSize="@dimen/inputSize"/>
                     </LinearLayout>
 
-                    <View
-                        android:gravity="end"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
                 </TableRow>
 
                 <!-- Budget -->
@@ -96,11 +86,6 @@
                     android:background="@color/DarkBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <View
-                        android:gravity="start"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -134,12 +119,6 @@
                             android:padding="@dimen/inputPadding"
                             android:textSize="@dimen/inputSize"/>
                     </LinearLayout>
-
-                    <View
-                        android:gravity="end"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
                 </TableRow>
 
                 <!-- Account -->
@@ -152,11 +131,7 @@
                     android:background="@color/DarkBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <View
-                        android:gravity="start"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
+
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_column="1"
@@ -185,11 +160,6 @@
                             android:padding="@dimen/inputPadding"
                             android:textSize="@dimen/inputSize"/>
                     </LinearLayout>
-                    <View
-                        android:gravity="end"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
                 </TableRow>
 
                 <!-- Value -->
@@ -201,11 +171,7 @@
                     android:background="@color/DarkBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <View
-                        android:gravity="start"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
+
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_column="1"
@@ -234,11 +200,6 @@
                             android:padding="@dimen/inputPadding"
                             android:textSize="@dimen/inputSize"/>
                     </LinearLayout>
-                    <View
-                        android:gravity="end"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
                 </TableRow>
 
                 <!-- Note -->
@@ -250,11 +211,7 @@
                     android:background="@color/DarkBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <View
-                        android:gravity="start"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
+
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_column="1"
@@ -283,11 +240,6 @@
                             android:padding="@dimen/inputPadding"
                             android:textSize="@dimen/inputSize"/>
                     </LinearLayout>
-                    <View
-                        android:gravity="end"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
                 </TableRow>
 
                 <!-- Date -->
@@ -299,11 +251,7 @@
                     android:background="@color/DarkBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <View
-                        android:gravity="start"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
+
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_column="1"
@@ -332,11 +280,6 @@
                             android:padding="@dimen/inputPadding"
                             android:textSize="@dimen/inputSize"/>
                     </LinearLayout>
-                    <View
-                        android:gravity="end"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
                 </TableRow>
 
                 <View
@@ -357,11 +300,7 @@
                     android:id="@+id/receiptLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <View
-                        android:gravity="start"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
+
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_column="1"
@@ -412,11 +351,6 @@
                                     android:visibility="gone"/>
                         </LinearLayout>
                     </LinearLayout>
-                    <View
-                        android:gravity="end"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
                 </TableRow>
 
 
