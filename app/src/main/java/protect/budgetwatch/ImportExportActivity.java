@@ -426,14 +426,21 @@ public class ImportExportActivity extends AppCompatActivity
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
+        TextView textView = new TextView(getApplicationContext());
+        textView.setTextSize(20);
+        textView.setPadding(20, 30, 20, 30);
+
         if(success)
         {
-            builder.setTitle(R.string.importSuccessfulTitle);
+            textView.setText(R.string.importSuccessfulTitle);
+            textView.setTextColor(Color.GREEN);
         }
         else
         {
-            builder.setTitle(R.string.importFailedTitle);
+            textView.setText(R.string.importFailedTitle);
+            textView.setTextColor(Color.RED);
         }
+        builder.setCustomTitle(textView);
 
         int messageId = success ? R.string.importedFrom : R.string.importFailed;
         final String template = getResources().getString(messageId);
@@ -459,14 +466,21 @@ public class ImportExportActivity extends AppCompatActivity
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
+        TextView textView = new TextView(getApplicationContext());
+        textView.setTextSize(20);
+        textView.setPadding(20, 30, 20, 30);
+
         if(success)
         {
-            builder.setTitle(R.string.exportSuccessfulTitle);
+            textView.setText(R.string.exportSuccessfulTitle);
+            textView.setTextColor(Color.GREEN);
         }
         else
         {
-            builder.setTitle(R.string.exportFailedTitle);
+            textView.setText(R.string.exportFailedTitle);
+            textView.setTextColor(Color.RED);
         }
+        builder.setCustomTitle(textView);
 
         int messageId = success ? R.string.exportedTo : R.string.exportFailed;
 

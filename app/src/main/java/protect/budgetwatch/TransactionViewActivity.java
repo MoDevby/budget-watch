@@ -10,6 +10,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -602,8 +603,14 @@ public class TransactionViewActivity extends AppCompatActivity
 
         if(id == R.id.action_delete)
         {
+            TextView textView = new TextView(getApplicationContext());
+            textView.setText(R.string.deleteTransactionTitle);
+            textView.setTextSize(20);
+            textView.setPadding(20, 30, 20, 30);
+            textView.setTextColor(Color.RED);
+
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle(R.string.deleteTransactionTitle);
+            builder.setCustomTitle(textView);
             builder.setMessage(R.string.deleteTransactionConfirmation);
             builder.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener()
             {

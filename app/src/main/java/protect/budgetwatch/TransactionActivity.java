@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
@@ -19,6 +20,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.TextView;
 
 public class TransactionActivity extends AppCompatActivity
 {
@@ -160,8 +162,14 @@ public class TransactionActivity extends AppCompatActivity
 
         if(id == R.id.action_purge_receipts)
         {
+            TextView textView = new TextView(getApplicationContext());
+            textView.setText(R.string.cleanupHelp);
+            textView.setTextSize(20);
+            textView.setPadding(20, 30, 20, 30);
+            textView.setTextColor(Color.BLACK);
+
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle(R.string.cleanupHelp);
+            builder.setCustomTitle(textView);
 
             final View view = getLayoutInflater().inflate(R.layout.cleanup_layout, null, false);
 

@@ -3,6 +3,7 @@ package protect.budgetwatch;
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
@@ -180,8 +181,14 @@ public class BudgetViewActivity extends AppCompatActivity
 
         if(id == R.id.action_delete)
         {
+            TextView textView = new TextView(getApplicationContext());
+            textView.setText(R.string.deleteBudgetTitle);
+            textView.setTextSize(20);
+            textView.setPadding(20, 30, 20, 30);
+            textView.setTextColor(Color.RED);
+
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle(R.string.deleteBudgetTitle);
+            builder.setCustomTitle(textView);
             builder.setMessage(R.string.deleteBudgetConfirmation);
             builder.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener()
             {
