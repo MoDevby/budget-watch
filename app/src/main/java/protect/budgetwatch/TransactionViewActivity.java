@@ -604,7 +604,7 @@ public class TransactionViewActivity extends AppCompatActivity
 
         if(id == R.id.action_delete)
         {
-            TextView textView = new TextView(getApplicationContext());
+            TextView textView = new TextView(this);
             textView.setText(R.string.deleteTransactionTitle);
             textView.setTextSize(20);
             textView.setPadding(20, 30, 20, 30);

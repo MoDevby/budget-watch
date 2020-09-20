@@ -114,7 +114,7 @@ public class ImportExportActivity extends AppCompatActivity
             public void onClick(View v)
             {
 
-                TextView textView = new TextView(getApplicationContext());
+                TextView textView = new TextView(getParent());
                 textView.setText(R.string.exportDateRangeHelp);
                 textView.setTextSize(20);
                 textView.setPadding(20, 30, 20, 30);
@@ -426,7 +426,7 @@ public class ImportExportActivity extends AppCompatActivity
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-        TextView textView = new TextView(getApplicationContext());
+        TextView textView = new TextView(this);
         textView.setTextSize(20);
         textView.setPadding(20, 30, 20, 30);
 
@@ -466,7 +466,7 @@ public class ImportExportActivity extends AppCompatActivity
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-        TextView textView = new TextView(getApplicationContext());
+        TextView textView = new TextView(this);
         textView.setTextSize(20);
         textView.setPadding(20, 30, 20, 30);
 

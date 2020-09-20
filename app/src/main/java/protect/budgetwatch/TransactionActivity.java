@@ -162,7 +162,7 @@ public class TransactionActivity extends AppCompatActivity
 
         if(id == R.id.action_purge_receipts)
         {
-            TextView textView = new TextView(getApplicationContext());
+            TextView textView = new TextView(this);
             textView.setText(R.string.cleanupHelp);
             textView.setTextSize(20);
             textView.setPadding(20, 30, 20, 30);
