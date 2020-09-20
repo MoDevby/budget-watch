@@ -13,13 +13,11 @@
             <TextView android:textSize="20.0sp"
                       android:textStyle="bold"
                       android:layout_gravity="center_vertical"
-                      android:paddingStart="20.0dip"
-                      android:paddingEnd="20.0dip"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:labelFor="@+id/startDate"
                       android:text="@string/startDate"
-                      android:textColor="@android:color/black"/>
+                      android:textColor="@android:color/darker_gray"/>
             <DatePicker
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -35,13 +33,11 @@
             <TextView android:textSize="20.0sp"
                       android:textStyle="bold"
                       android:layout_gravity="center_vertical"
-                      android:paddingStart="20.0dip"
-                      android:paddingEnd="20.0dip"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:labelFor="@+id/endDate"
                       android:text="@string/endDate"
-                      android:textColor="@android:color/black"/>
+                      android:textColor="@android:color/darker_gray"/>
             <DatePicker
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
