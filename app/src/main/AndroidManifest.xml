@@ -95,7 +95,8 @@
 
         <activity
             android:name=".PasswordAuthenticationActivity"
-            android:label="@string/enterPasswordTitle" />
+            android:label="@string/enterPasswordTitle"
+            android:windowSoftInputMode="stateVisible"/>
         <activity
             android:name=".PasswordCreationActivity"
             android:label="@string/createPasswordTitle"
