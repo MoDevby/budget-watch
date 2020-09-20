@@ -22,7 +22,7 @@
 
     <ScrollView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/inputContrastBackground"
+                android:background="@color/DarkBackground"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
@@ -33,7 +33,7 @@
                          android:layout_width="fill_parent"
                          android:layout_height="wrap_content"
                          android:stretchColumns="1"
-                         android:background="@color/inputContrastBackground">
+                         android:background="@color/DarkBackground">
 
                 <!-- Name -->
                 <View
@@ -41,7 +41,7 @@
                     android:layout_width="match_parent"
                     android:background="@color/inputBorder" />
                 <TableRow
-                    android:background="@color/inputBackground"
+                    android:background="@color/DarkBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <View
@@ -93,7 +93,7 @@
                     android:background="@color/inputBorder"
                     android:layout_width="match_parent"/>
                 <TableRow
-                    android:background="@color/inputBackground"
+                    android:background="@color/DarkBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <View
@@ -124,7 +124,7 @@
                             android:paddingRight="@dimen/inputPadding"
                             android:paddingEnd="@dimen/inputPadding"
                             android:textSize="@dimen/inputSize"
-                            android:drawSelectorOnTop="true" />
+                            android:drawSelectorOnTop="true"/>
 
                         <TextView
                             android:id="@+id/budgetView"
@@ -149,7 +149,7 @@
                     android:background="@color/inputBorder"
                     android:layout_width="match_parent"/>
                 <TableRow
-                    android:background="@color/inputBackground"
+                    android:background="@color/DarkBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <View
@@ -198,7 +198,7 @@
                     android:background="@color/inputBorder"
                     android:layout_width="match_parent"/>
                 <TableRow
-                    android:background="@color/inputBackground"
+                    android:background="@color/DarkBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <View
@@ -247,7 +247,7 @@
                     android:background="@color/inputBorder"
                     android:layout_width="match_parent"/>
                 <TableRow
-                    android:background="@color/inputBackground"
+                    android:background="@color/DarkBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <View
@@ -296,7 +296,7 @@
                     android:background="@color/inputBorder"
                     android:layout_width="match_parent"/>
                 <TableRow
-                    android:background="@color/inputBackground"
+                    android:background="@color/DarkBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <View
@@ -353,7 +353,7 @@
                     android:layout_height="match_parent"/>
 
                 <TableRow
-                    android:background="@color/inputBackground"
+                    android:background="@color/DarkBackground"
                     android:id="@+id/receiptLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -429,7 +429,7 @@
                 <!-- Ending spacer -->
 
                 <TableRow
-                    android:background="@color/inputContrastBackground"
+                    android:background="@color/DarkBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <Space

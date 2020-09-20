@@ -5,10 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="white">#FFFFFF</color>
     <color name="grey">#4b4b4b</color>
-    <color name="DarkBackground">#555B63</color>
+    <color name="DarkBackground">#222222</color>
     <color name="DarkForeground">#E6E6FA</color>
 
-    <color name="inputContrastBackground">#555B63</color>
-    <color name="inputBackground">#555B63</color>
     <color name="inputBorder">#777F8A</color>
 </resources>
