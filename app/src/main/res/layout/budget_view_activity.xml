@@ -44,11 +44,6 @@
                 <TableRow
                     android:background="@color/DarkBackground"
                     android:layout_width="match_parent">
-                    <View
-                        android:gravity="start"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -78,11 +73,6 @@
                             android:textSize="@dimen/inputSize"/>
                     </LinearLayout>
 
-                    <View
-                        android:gravity="end"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
                 </TableRow>
 
                 <!-- Value -->
@@ -93,11 +83,6 @@
                 <TableRow
                     android:background="@color/DarkBackground"
                     android:layout_width="match_parent">
-                    <View
-                        android:gravity="start"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -127,11 +112,6 @@
                             android:textSize="@dimen/inputSize"/>
                     </LinearLayout>
 
-                    <View
-                        android:gravity="end"
-                        android:layout_height="match_parent"
-                        android:layout_width="@dimen/inputBorderThickness"
-                        android:background="@color/inputBorder" />
                 </TableRow>
 
                 <View
