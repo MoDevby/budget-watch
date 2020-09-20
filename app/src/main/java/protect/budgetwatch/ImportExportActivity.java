@@ -8,6 +8,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -112,8 +113,15 @@ public class ImportExportActivity extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
+
+                TextView textView = new TextView(getApplicationContext());
+                textView.setText(R.string.exportDateRangeHelp);
+                textView.setTextSize(20);
+                textView.setPadding(20, 30, 20, 30);
+                textView.setTextColor(Color.BLACK);
+
                 android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(ImportExportActivity.this);
-                builder.setTitle(R.string.exportDateRangeHelp);
+                builder.setCustomTitle(textView);
                 final View datePickerView = getLayoutInflater().inflate(R.layout.budget_date_picker_layout, null, false);
                 builder.setView(datePickerView);
                 builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener()

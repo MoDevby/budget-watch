@@ -6,10 +6,12 @@ import android.app.DialogFragment;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class DateSelectDialogFragment extends DialogFragment {
@@ -24,8 +26,14 @@ public class DateSelectDialogFragment extends DialogFragment {
 
         final View view = LayoutInflater.from(getActivity()).inflate(R.layout.budget_date_picker_layout, null, false);
 
+        TextView textView = new TextView(getContext());
+        textView.setText(R.string.budgetDateRangeHelp);
+        textView.setTextSize(20);
+        textView.setPadding(20, 30, 20, 30);
+        textView.setTextColor(Color.BLACK);
+
         return new AlertDialog.Builder(getActivity())
-                .setTitle(R.string.budgetDateRangeHelp)
+                .setCustomTitle(textView)
                 .setView(view)
                 .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener()
                 {
