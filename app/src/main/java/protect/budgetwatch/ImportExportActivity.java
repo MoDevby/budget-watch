@@ -114,10 +114,10 @@ public class ImportExportActivity extends AppCompatActivity
             public void onClick(View v)
             {
 
-                TextView textView = new TextView(getParent());
+                TextView textView = new TextView(getApplicationContext());
                 textView.setText(R.string.exportDateRangeHelp);
-                textView.setTextSize(20);
-                textView.setPadding(20, 30, 20, 30);
+                textView.setTextSize(22);
+                textView.setPadding(30, 30, 30, 30);
                 textView.setTextColor(Color.BLACK);
 
                 android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(ImportExportActivity.this);
@@ -427,18 +427,17 @@ public class ImportExportActivity extends AppCompatActivity
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         TextView textView = new TextView(this);
-        textView.setTextSize(20);
-        textView.setPadding(20, 30, 20, 30);
+        textView.setTextSize(24);
+        textView.setPadding(30, 30, 30, 30);
+        textView.setTextColor(Color.BLACK);
 
         if(success)
         {
             textView.setText(R.string.importSuccessfulTitle);
-            textView.setTextColor(Color.GREEN);
         }
         else
         {
             textView.setText(R.string.importFailedTitle);
-            textView.setTextColor(Color.RED);
         }
         builder.setCustomTitle(textView);
 
@@ -467,18 +466,17 @@ public class ImportExportActivity extends AppCompatActivity
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         TextView textView = new TextView(this);
-        textView.setTextSize(20);
-        textView.setPadding(20, 30, 20, 30);
+        textView.setTextSize(24);
+        textView.setPadding(30, 30, 30, 30);
+        textView.setTextColor(Color.BLACK);
 
         if(success)
         {
             textView.setText(R.string.exportSuccessfulTitle);
-            textView.setTextColor(Color.GREEN);
         }
         else
         {
             textView.setText(R.string.exportFailedTitle);
-            textView.setTextColor(Color.RED);
         }
         builder.setCustomTitle(textView);
 

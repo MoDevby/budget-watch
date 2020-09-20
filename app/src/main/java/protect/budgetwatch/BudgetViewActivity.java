@@ -183,9 +183,9 @@ public class BudgetViewActivity extends AppCompatActivity
         {
             TextView textView = new TextView(this);
             textView.setText(R.string.deleteBudgetTitle);
-            textView.setTextSize(20);
-            textView.setPadding(20, 30, 20, 30);
-            textView.setTextColor(Color.RED);
+            textView.setTextSize(24);
+            textView.setPadding(30, 30, 30, 30);
+            textView.setTextColor(Color.BLACK);
 
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setCustomTitle(textView);

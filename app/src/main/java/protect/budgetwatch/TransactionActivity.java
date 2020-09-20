@@ -164,8 +164,8 @@ public class TransactionActivity extends AppCompatActivity
         {
             TextView textView = new TextView(this);
             textView.setText(R.string.cleanupHelp);
-            textView.setTextSize(20);
-            textView.setPadding(20, 30, 20, 30);
+            textView.setTextSize(22);
+            textView.setPadding(30,30,30,30);
             textView.setTextColor(Color.BLACK);
 
             AlertDialog.Builder builder = new AlertDialog.Builder(this);

@@ -26,10 +26,10 @@ public class DateSelectDialogFragment extends DialogFragment {
 
         final View view = LayoutInflater.from(getActivity()).inflate(R.layout.budget_date_picker_layout, null, false);
 
-        TextView textView = new TextView(getContext());
+        TextView textView = new TextView(getActivity());
         textView.setText(R.string.budgetDateRangeHelp);
-        textView.setTextSize(20);
-        textView.setPadding(20, 30, 20, 30);
+        textView.setTextSize(22);
+        textView.setPadding(30, 30, 30, 30);
         textView.setTextColor(Color.BLACK);
 
         return new AlertDialog.Builder(getActivity())
